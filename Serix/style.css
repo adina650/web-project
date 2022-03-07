@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Rubik:ital@1&display=swap');
+
+
+body {
+  font-family: 'Comfortaa', cursive;
+  line-height: 1.7;
+  color: var(--body);
+
+}
+
+h1,h2,h3,h4,h5,h6,
+.display-4{
+  color: var(--dark);
+  font-weight:700;
+
+}
+
+a{
+
+  text-decoration: none;
+}
+
+.navbar .logo{
+  width: 160px;
+}
+
+
+.navbar .nav-link{
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.btn{
+  padding: 14px 18px;
+  border-width: 2px;
+  border-radius: 0;
+}
+
+
+.background{
+  width:100%;
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 9%, rgba(255,0,0,0.8018557764902836) 40%, rgba(228,228,228,0.6085784655659139) 71%);
+
+
+}
+
+.hero{
+  background-image:  url(img/deadpool.png);
+  background-size: 850px 450px;
+  background-repeat: no-repeat;
+  background-position: right;
+  
+
+}
+
+
+/*services*/
+
+section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.card-effect {
+
+    background-color: #fff;
+    padding: 25px;
+    transition: all 0.35s ease;
+}
+
+.card-effect:hover {
+    box-shadow: none;
+    transform: translateY(5px);
+}
+
+.iconbox {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#ff0000 ;
+    color: #fff;
+    font-size: 32px;
+    border-radius: 100px;
+    flex: none;
+}
+
+
+.service {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.service::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -100%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+
+.service:hover .iconbox {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+.service:hover h5,
+.service:hover p {
+    color: var(--white);;
+}
+
+.service:hover::after {
+    opacity: 1;
+    top: 0;
+}
+
+
+/*Carousel*/
+
+.carousel-caption {
+    text-align: left;
+    max-width: 550px;
+    padding: 10px 10px;
+    margin: 10 auto;
+    margin-top: 100px;
+  }
+
+
+
+
+
+form input.form-control{
+  height: 56px;
+}
+
+.footer-top {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    background-color: var(--dark);
+}
+
+.footer-top a {
+    color: var(--body);
+}
+
+.footer-top a:hover {
+    color: var(--white);
+}
+
+.footer-bottom {
+    background-color: #242933;
+}
+
+
+
+
+
+
+/*forms*/
+.form {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: black;
+    border-radius: 7px;
+
+
+}
+
+    .form h1 {
+        margin: 40px 120px;
+        padding: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 30px;
+        text-transform: uppercase;
+    }
+
+.input-form {
+    margin: 15px 40px;
+    text-align: center;
+
+}
+
+.input-form input {
+        padding: 10px;
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+        background: none;
+        outline: none;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+    }
+
+.input-form input[type="text"]:focus, .input-form input[type="password"]:focus {
+            border: 1px solid #0fc3f5;
+        }
+
+.input-form input[type="submit"] {
+            margin-top: 20px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            background: red;
+            transition: .3s;
+        }
+
+.input-form input[type="submit"]:hover {
+    background: black;
+    }
+
+.form a {
+    display: block;
+    padding: 0 0 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+    .form a:hover {
+        color: red;
+    } /**/
+
+
+.h-tag{
+  text-align: center;
+}
+
+.form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: red;
+
+}
+
+    .form h1 {
+        margin: 25px 120px;
+        padding: 0;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+        text-transform: uppercase;
+    }
+
+.form-group{
+    margin: 15px 40px;
+    text-align: center;
+}
+
+    .form-group input {
+        padding: 10px;
+        width: 100%;
+        color: #fff;
+        font-size: 20px;
+        background: none;
+        outline: none;
+        border: 1px solid #fff;
+        box-sizing: border-box;
+    }
+
+        .form-group input[type="text"]:focus,
+        .input-form input[type="password"]:focus {
+        border: 1px solid red;
+        }
+
+        .form-group input[type="submit"] {
+            margin-top: 20px;
+            color: #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            background: red;
+            transition: .3s;
+        }
+
+            .form-group input[type="submit"]:hover {
+                background: red;
+            }
+
+.form  {
+    display: block;
+    padding: 0 0 30px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+
+
